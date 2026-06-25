@@ -1,7 +1,7 @@
 #!/bin/bash
 
 verify_files() {
-    cp $REPORT_DIR/* ./reports/latest/
+    cp $REPORT_DIR/* $BASE_DIR/reports/latest/
     FILES=(
         services.txt
         journald.txt
@@ -25,4 +25,5 @@ verify_files() {
             echo "[ERREUR] $file"
         fi
     done
+    echo "Rapport disponible dans : $REPORT_DIR & ./reports/latest/"
 }

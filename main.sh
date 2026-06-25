@@ -5,6 +5,7 @@ TIMESTAMP=$(date +"%Y%m%d-%H%M%S")
 REPORT_DIR="$BASE_DIR/reports/run-$TIMESTAMP"
 
 export REPORT_DIR
+export BASE_DIR
 
 source modules/init.sh
 source modules/services.sh
