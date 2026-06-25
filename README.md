@@ -104,7 +104,7 @@ Le projet a été développé et testé sous :
 # Structure du projet
 
 ```text
-monitoring-lab/
+monitoring-lab/name-user
 │
 ├── main.sh
 │
@@ -119,6 +119,9 @@ monitoring-lab/
 │   └── checks.sh
 │
 └── reports/
+│   ├── latest/
+│   │    └── ....
+│   └── ....
 ```
 
 ---
@@ -146,11 +149,7 @@ source modules/init.sh
 
 permet d'importer les fonctions du fichier dans le shell courant.
 
-Les fonctions deviennent alors directement accessibles :
-
-```bash
-create_report_dir
-```
+Les fonctions deviennent alors directement accessibles
 
 Sans `source`, il faudrait exécuter chaque script séparément, ce qui compliquerait le partage des variables.
 
