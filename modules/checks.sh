@@ -25,5 +25,5 @@ verify_files() {
             echo "[ERREUR] $file"
         fi
     done
-    echo "Rapport disponible dans : $REPORT_DIR & ./reports/latest/"
+    echo "Rapport disponible dans : $REPORT_DIR & $BASE_DIR/reports/latest/"
 }
