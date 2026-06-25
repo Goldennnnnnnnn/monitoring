@@ -13,7 +13,7 @@ analyze_app_log() {
         echo "Nombre total de lignes : $TOTAL"
         echo "Nombre ERROR : $ERRORS"
         echo "Nombre CRITICAL : $CRITICALS"
-        echo ""
+        echo
         echo "Top 5 des hôtes :"
         awk '{print $3}' "$LOG_FILE" \
             | sort \
@@ -22,6 +22,6 @@ analyze_app_log() {
             | head -5
     } > "$SUMMARY"
     cp "$LOG_FILE" "$REPORT_DIR/app_redacted.log"
-    echo "[+] app_summary.txt & app_redacted.log créé"
+    echo -e "\033[32m[+]\033[0m app_summary.txt & app_redacted.log créé"
     echo
 }

@@ -15,6 +15,6 @@ analyze_metrics() {
         echo "5 premières anomalies :"
         awk -F',' 'NR==1 || $3 >=95' "$CSV" | head -6
     } > "$OUTPUT"
-    echo "[+] metrics_summary.txt créé"
+    echo -e "\033[32m[+]\033[0m metrics_summary.txt créé"
     echo
 }
