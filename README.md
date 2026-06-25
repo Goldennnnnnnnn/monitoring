@@ -101,16 +101,6 @@ Le projet a été développé et testé sous :
 
 ---
 
-# Créé les users
-
-```bash
-cd /opt/monitoring-lab/
-sudo mkdir $USER
-
-```
-
----
-
 # Structure du projet
 
 ```text
